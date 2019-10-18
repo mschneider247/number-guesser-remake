@@ -10,16 +10,28 @@
 <body>
   <header>
     <h1>Number Guesser!</h1>
+    <h2>FUBAR edition</h2>
+    <p>Mininum Guess:</p>
+    <input id="minGuess" placeholder="Mininum Guess">
+    <p>Maximum Guess:</p>
+    <input id="maxGuess" placeholder="Maximum Guess">
+    <button id="rangeBtn">Select Range</button>
+    <p>Player 1 #guesses:</p><span id="p1tries">0</span>
+    <p>Player 2 #guesses:</p><span id="p2tries">0</span>
     <h5>shhhh...   the number is: <span id="randomNumber"></span></h5>
   </header>
   <main>
     <section>
       <h3>Player 1</h3>
-      <input placeholder="Input Guess!">
+      <input id="p1Guess" placeholder="Input Guess!">
+      <button id="p1Btn">Guess</button>
+      <span id="p1Feedback"></span>
     </section>
     <section>
       <h3>Player 2</h3>
-      <input placeholder="Input Guess!">
+      <input id="p2Guess" placeholder="Input Guess!">
+      <button id="p2Btn">Guess</button>
+      <span id="p2Feedback"></span>
     </section>
   </main>
   <footer>
